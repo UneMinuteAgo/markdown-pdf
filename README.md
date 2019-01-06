@@ -251,3 +251,17 @@ makehtml() {
 	return 0
 }
 ````
+
+
+
+### Installation de Highlight.js
+
+Pour que les blocs de codes soient colorisés syntaxiquement,
+l'enveloppe HTML doit charger la librairie nommé **Highlight.js**.
+Pour "standardiser" l'installation, j'ai défini des emplacements
+qui sont toujours disponibles.
+
+Sous Windows, il faut copier le fichier ``src/.highlight.pack-min.js``
+et le déposer dans le dossier suivant : ``C:\Windows\System\``
+
+Sous Linux (...).
