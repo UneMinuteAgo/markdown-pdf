@@ -1,0 +1,153 @@
+/**
+ * @Author:  NDU90045
+ * @Release: 03.12.2018
+ * @Version: v1.1.0
+ *
+ * @Desc:    Feuille de style LESS pour la conversion Markdown vers PDF ou HTML
+ *
+ */
+/**
+ * Configuration Par défaut, applicable à PDF
+ */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.8rem;
+  color: #3f3f3f;
+  padding: 0 5rem;
+  /**
+     * Style par défaut pour les blocks de code.
+     * Modifier la feuille Higlight.js si nécessaire.
+     * Ce reférer au fichier .markdown-pdf-hljs-template.css
+     * pour avoir les balises de base.
+     */
+  /** Code Simple **/
+  /** Code Block **/
+  /**
+     * Configuration Custom pour HTML
+     */
+}
+body h1 {
+  font-size: 2.4em;
+  /** 1.75 **/
+  text-transform: uppercase;
+  padding: 1rem 0 .3rem;
+  border-bottom: 1px solid #eaeaea;
+}
+body h2 {
+  font-size: 2.2em;
+  /** 1.5 **/
+  padding: 0 0 .3rem;
+  border-bottom: 1px solid #eaeaea;
+}
+body h3 {
+  font-size: 1.8em;
+  /** 1.3 **/
+}
+body h4 {
+  font-size: 1.4em;
+  /** 1.2 **/
+}
+body h5 {
+  font-size: 1.0em;
+  /** 1.0 **/
+}
+body h6 {
+  font-size: 0.90rem;
+  /** 0.95 **/
+}
+body hr {
+  border-color: #eaeaea;
+}
+body pre {
+  background: #272822;
+  border: .1rem solid #272822;
+  border-radius: 3px;
+  font-size: 0.65em;
+  padding: .6rem;
+}
+body p {
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+body img {
+  display: block;
+  margin: auto;
+}
+body abbr[title]:after,
+body a[href]:after {
+  content: "";
+}
+body code:not([class^='language']):not(.hljs) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: .125rem .250rem;
+  font-size: 90%;
+  border-radius: 3px;
+  /** Gitlab Readme theme **/
+  /** Gitlab Doc Theme**/
+  /** GitLab Mention Theme **/
+  /** GitLab Mention Theme (Customized : Darker/Lighter) **/
+  color: #115090;
+  background-color: #f5f9fc;
+  /** GitHub Theme **/
+}
+body code[class^='language'] {
+  font-size: 1.15em;
+}
+body blockquote {
+  border: 1px solid #115090;
+  border-radius: 3px;
+  font-style: italic;
+  background-color: #f5f9fc;
+  padding: 0 1rem;
+}
+body blockquote p img {
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+body table {
+  margin: auto;
+  border: 1px solid #3f3f3f;
+}
+body table th,
+body table td {
+  border: 1px solid white;
+  padding: .2rem .4rem;
+}
+body table tr:first-child th {
+  background: #115090;
+  color: white;
+}
+body table tr:nth-child(odd) td {
+  background: #f5f9fc;
+}
+body.HTMLRender {
+  padding: 0;
+  /**
+         * DFTS: Classe pour les documents Word de type DFTS
+         */
+}
+body.HTMLRender.DFTS {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+body.HTMLRender.DFTS h1 {
+  font-size: 16pt;
+}
+body.HTMLRender.DFTS h2 {
+  font-size: 14pt;
+}
+body.HTMLRender.DFTS h3 {
+  font-size: 13pt;
+}
+body.HTMLRender.DFTS h4 {
+  font-size: 10pt;
+}
+body.HTMLRender.DFTS h5 {
+  font-size: 10pt;
+  font-weight: normal;
+}
+body.HTMLRender.DFTS h6 {
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: italic;
+}

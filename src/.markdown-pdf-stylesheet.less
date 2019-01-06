@@ -1,0 +1,190 @@
+/**
+ * @Author:  NDU90045
+ * @Release: 03.12.2018
+ * @Version: v1.1.0
+ *
+ * @Desc:    Feuille de style LESS pour la conversion Markdown vers PDF ou HTML
+ *
+ */
+
+/**
+ * Configuration Par défaut, applicable à PDF
+ */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.8rem;
+	color: #3f3f3f;
+	padding: 0 5rem;
+
+    h1 {
+        font-size: 2.4em; /** 1.75 **/
+        text-transform: uppercase;
+        padding: 1rem 0 .3rem;
+        border-bottom: 1px solid #eaeaea;
+    }
+    h2 {
+        font-size: 2.2em; /** 1.5 **/
+        padding: 0 0 .3rem;
+        border-bottom: 1px solid #eaeaea;
+    }
+    h3 {
+        font-size: 1.8em; /** 1.3 **/
+    }
+    h4 {
+        font-size: 1.4em; /** 1.2 **/
+    }
+    h5 {
+        font-size: 1.0em; /** 1.0 **/
+    }
+    h6 {
+        font-size: 0.90rem; /** 0.95 **/
+    }
+    hr {
+        border-color: #eaeaea;
+    }
+
+    /**
+     * Style par défaut pour les blocks de code.
+     * Modifier la feuille Higlight.js si nécessaire.
+     * Ce reférer au fichier .markdown-pdf-hljs-template.css
+     * pour avoir les balises de base.
+     */
+    pre {
+        background: #272822;
+		border: .1rem solid #272822;
+		border-radius: 3px;
+        font-size: 0.65em;
+        padding: .6rem;
+    }
+
+    p {
+        text-align: justify;
+        text-indent: 1.5rem;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    abbr[title], a[href] {
+        &:after {
+            content: "";
+        }
+    }
+
+    /** Code Simple **/
+    code:not([class^='language']):not(.hljs){
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        padding: .125rem .250rem;
+        font-size: 90%;
+        border-radius: 3px;
+
+        /** Gitlab Readme theme **/
+        //color: #c0341d;
+        //background-color: #fcefed;
+
+        /** Gitlab Doc Theme**/
+        //color: #5f8341;
+        //background-color: rgba(95,131,65,0.1);
+
+        /** GitLab Mention Theme **/
+        //color: #1b69b6;
+        //background-color: #e4f0fb;
+
+        /** GitLab Mention Theme (Customized : Darker/Lighter) **/
+        color: #115090;
+        background-color: #f5f9fc;
+
+        /** GitHub Theme **/
+        //background-color: rgba(27,31,35,0.05);
+    }
+
+    /** Code Block **/
+    code[class^='language'] {
+        font-size: 1.15em;
+    }
+
+    blockquote {
+        border: 1px solid #115090;
+        border-radius: 3px;
+        font-style: italic;
+        background-color: #f5f9fc;
+        padding: 0 1rem;
+
+        p {
+            img {
+                margin-top: .75rem;
+                margin-bottom: .75rem;
+            }
+        }
+    }
+
+    table {
+        margin: auto;
+        border: 1px solid #3f3f3f;
+
+        th, td {
+            border: 1px solid white;
+            padding: .2rem .4rem;
+        }
+
+        tr {
+            &:first-child {
+                th {
+                    background: #115090;
+                    color: white;
+                }
+            }
+            &:nth-child(odd) {
+                td {
+                    background: #f5f9fc;
+                }
+            }
+        }
+    }
+
+
+    /**
+     * Configuration Custom pour HTML
+     */
+    &.HTMLRender {
+		padding: 0;
+	
+        /**
+         * DFTS: Classe pour les documents Word de type DFTS
+         */
+        &.DFTS {
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+
+            h1 {
+                font-size: 16pt;
+            }
+
+            h2 {
+                font-size: 14pt;
+            }
+
+            h3 {
+                font-size: 13pt;
+            }
+
+            h4 {
+                font-size: 10pt;
+            }
+
+            h5 {
+                font-size: 10pt;
+                font-weight: normal;
+            }
+
+            h6 {
+                font-size: 10pt;
+                font-weight: normal;
+                font-style: italic;
+            }
+        }
+    }
+
+}

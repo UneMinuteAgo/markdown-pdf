@@ -1,0 +1,173 @@
+/**
+ * @Author:  NDU90045
+ * @Release: 08.11.2018
+ * @Version: v1.0.0
+ *
+ * @Desc:    Feuille de style LESS pour la conversion Markdown vers PDF ou HTML
+ *
+ */
+/**
+ * Configuration Par défaut, applicable à PDF
+ */
+body {
+  font-family: Gadugi, Calibri;
+  font-size: 0.8rem;
+  padding: 0 5rem;
+  /** Code Simple **/
+  /** Code Block **/
+  /**
+     * Configuration Custom pour HTML
+     */
+}
+body h1 {
+  font-size: 2.03616rem;
+  text-transform: uppercase;
+  color: #446f8e;
+  text-align: center;
+  border: 1px solid #f76806;
+  background-color: #f5f9fc;
+  border-radius: 3px;
+}
+body h2 {
+  padding: .1rem 0 .3rem;
+  color: #446f8e;
+  border-bottom: 1px solid #f76806;
+  font-weight: normal;
+  font-size: 1.16352;
+}
+body h3 {
+  color: #446f8e;
+  font-size: 1.008rem;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0, 153, 255, 0.25);
+  padding: .1rem 0 .25rem;
+}
+body h4 {
+  font-size: 0.9rem;
+  color: #446f8e;
+  font-weight: 100;
+  border-bottom: 1px solid #edeef1;
+}
+body h5 {
+  font-size: 0.8rem;
+  color: #446f8e;
+  font-weight: normal;
+  font-style: italic;
+}
+body h6 {
+  font-size: 0.7rem;
+  /** 0.95 **/
+  color: #446f8e;
+  font-weight: normal;
+  padding: .1rem 0 .25rem 1rem;
+  font-style: italic;
+}
+body hr {
+  border-color: #eaeaea;
+}
+body pre {
+  font-size: 0.65em;
+  background: #272822;
+  /*background: #fafafa;*/
+  /*border: .1rem solid #4d4e4a; !* #272822*!*/
+  border: 1px solid #f76806;
+  border-radius: 3px;
+  padding: .6rem;
+}
+body p {
+  text-align: justify;
+}
+body img {
+  display: block;
+  margin: auto;
+}
+body abbr[title]:after,
+body a[href]:after {
+  content: "";
+}
+body code:not([class^='language']):not(.hljs) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: .125rem .250rem;
+  font-size: 90%;
+  border-radius: 3px;
+  /** Gitlab Readme theme **/
+  /*color: #c0341d;
+        background-color: #fcefed;*/
+  /** Gitlab Doc Theme**/
+  /*color: #5f8341;
+        background-color: rgba(95,131,65,0.1);*/
+  /** GitLab Mention Theme **/
+  /*color: #1b69b6;
+        background-color: #e4f0fb;*/
+  /** GitLab Mention Theme (Customized : Darker/Lighter) **/
+  color: #f76806;
+  background-color: #f5f9fc;
+  /** GitHub Theme **/
+  /*background-color: rgba(27,31,35,0.05);*/
+}
+body code[class^='language'] {
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  /** Default color : **/
+  /*color: #3f3f3f;*/
+  font-size: 1.15em;
+  color: #f8f8f2;
+}
+body blockquote {
+  border: 1px solid #115090;
+  border-radius: 3px;
+  font-style: italic;
+  background-color: #f5f9fc;
+  padding: 0 1rem;
+}
+body blockquote p img {
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+body table {
+  margin: auto;
+  border: 1px solid #3f3f3f;
+}
+body table th,
+body table td {
+  /*border: 1px solid #3f3f3f;*/
+  border: 1px solid white;
+  padding: .2rem .4rem;
+}
+body table tr:first-child th {
+  background: #115090;
+  color: white;
+}
+body table tr:nth-child(odd) td {
+  background: #f5f9fc;
+}
+body.HTMLRender {
+  padding: 0;
+  /**
+         * DFTS: Classe pour les documents Word de type DFTS
+         */
+}
+body.HTMLRender.DFTS {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+}
+body.HTMLRender.DFTS h1 {
+  font-size: 16pt;
+}
+body.HTMLRender.DFTS h2 {
+  font-size: 14pt;
+}
+body.HTMLRender.DFTS h3 {
+  font-size: 13pt;
+}
+body.HTMLRender.DFTS h4 {
+  font-size: 10pt;
+}
+body.HTMLRender.DFTS h5 {
+  font-size: 10pt;
+  font-weight: normal;
+}
+body.HTMLRender.DFTS h6 {
+  font-size: 10pt;
+  font-weight: normal;
+  font-style: italic;
+}

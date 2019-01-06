@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>%TITLE%</title>
+    <script>
+        var Windows = false;
+        var Linux = false;
+    </script>
+
+    <script src="C:\Windows\System\.highlight.pack-min.js" onload="Windows = true"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('readystatechange', function() {
+           if (document.readyState === 'complete'){
+
+               if (!Windows && !Linux) {
+                   alert("Highlight.js Not Found\n" +
+                       "    - Windows Path: C:\\Windows\\System\\\n" +
+                       "    - Linux:"
+                   );
+               }
+
+               document.querySelectorAll('pre code').forEach(function(el) {
+                   hljs.highlightBlock(el);
+               });
+           }
+        });
+    </script>
+    <style>
+        %STYLE_CSS%
+    </style>
+</head>
+<body class="HTMLRender %CLASS%">
+    %MARKDOWN_HTML%
+</body>
+</html>
